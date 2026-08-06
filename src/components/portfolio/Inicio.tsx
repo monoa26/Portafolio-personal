@@ -15,7 +15,7 @@ export function Inicio() {
         />
         <div className="absolute inset-0 bg-background/70" />
         <div className="persona-stripes absolute right-0 top-0 h-40 w-full opacity-40" />
-        <div className="persona-stripes absolute bottom-10 left-0 h-32 w-full opacity-30" />
+        <div className="persona-stripes absolute bottom-0 left-0 h-32 w-full opacity-30" />
         <div className="absolute -left-20 top-1/4 h-64 w-64 -rotate-12 bg-primary/10" />
         <div className="absolute -right-16 bottom-1/4 h-48 w-48 rotate-12 bg-primary/15" />
       </div>
