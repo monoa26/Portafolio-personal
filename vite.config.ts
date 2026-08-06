@@ -32,9 +32,7 @@ export default defineConfig({
         },
       },
     }),
-    ...(process.env.NETLIFY || process.env.NODE_ENV === "production"
-      ? [netlify()]
-      : []),
+    ...(process.env.NETLIFY || process.env.NODE_ENV === "production" ? [netlify()] : []),
     viteReact(),
     tailwindcss(),
   ],
