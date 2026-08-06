@@ -4,16 +4,16 @@ import { Menu, X } from "lucide-react";
 import { ThemeToggle } from "./ThemeToggle";
 
 const navLinks = [
-  { label: "Inicio", href: "#home" },
-  { label: "Sobre mí", href: "#about" },
-  { label: "Proyectos", href: "#projects" },
-  { label: "Habilidades", href: "#skills" },
-  { label: "Contacto", href: "#contact" },
+  { label: "Inicio", href: "#inicio" },
+  { label: "Sobre mí", href: "#sobre-mi" },
+  { label: "Proyectos", href: "#proyectos" },
+  { label: "Habilidades", href: "#habilidades" },
+  { label: "Contacto", href: "#contacto" },
 ];
 
 export function Encabezado() {
   const [isOpen, setIsOpen] = useState(false);
-  const [activeSection, setActiveSection] = useState("home");
+  const [activeSection, setActiveSection] = useState("#inicio");
 
   useEffect(() => {
     const sections = navLinks
@@ -24,7 +24,11 @@ export function Encabezado() {
       (entries) => {
         for (const entry of entries) {
           if (entry.isIntersecting) {
-            setActiveSection(`#${entry.target.id}`);
+            const hash = `#${entry.target.id}`;
+            setActiveSection(hash);
+            if (window.location.hash !== hash) {
+              history.replaceState(null, "", hash);
+            }
           }
         }
       },
@@ -65,7 +69,7 @@ export function Encabezado() {
         <div className="hidden items-center gap-2 md:flex">
           <ThemeToggle />
           <a
-            href="#contact"
+            href="#contacto"
             className="persona-btn inline-flex items-center gap-2 bg-primary px-5 py-2 text-sm font-bold uppercase tracking-[0.18em] text-primary-foreground transition-all hover:bg-primary/85"
           >
             Hablemos
@@ -100,7 +104,7 @@ export function Encabezado() {
               </a>
             ))}
             <a
-              href="#contact"
+              href="#contacto"
               onClick={() => setIsOpen(false)}
               className="persona-btn mt-2 bg-primary px-4 py-2 text-center text-sm font-bold uppercase tracking-[0.18em] text-primary-foreground"
             >

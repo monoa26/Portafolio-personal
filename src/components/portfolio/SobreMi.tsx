@@ -3,7 +3,7 @@ import { EncabezadoSeccion } from "./EncabezadoSeccion";
 
 export function SobreMi() {
   return (
-    <section id="about" className="w-full bg-secondary py-24">
+    <section id="sobre-mi" className="w-full bg-secondary py-24">
       <div className="mx-auto max-w-5xl px-4 sm:px-6">
         <Reveal>
           <EncabezadoSeccion eyebrow="Sobre mí" title="Pasión por el código limpio" />

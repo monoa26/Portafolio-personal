@@ -25,7 +25,7 @@ const skills = [
 
 export function Habilidades() {
   return (
-    <section id="skills" className="w-full bg-background py-24">
+    <section id="habilidades" className="w-full bg-background py-24">
       <div className="mx-auto max-w-5xl px-4 sm:px-6">
         <Reveal>
           <EncabezadoSeccion eyebrow="Habilidades" title="Tecnologías y herramientas" />

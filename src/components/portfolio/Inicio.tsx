@@ -5,7 +5,7 @@ import { Reveal } from "./Reveal";
 export function Inicio() {
   return (
     <section
-      id="home"
+      id="inicio"
       className="relative flex min-h-[calc(100vh-4rem)] flex-col items-center justify-center overflow-hidden px-4 py-20 sm:px-6"
     >
       <div className="pointer-events-none absolute inset-0 -z-10">
@@ -37,13 +37,13 @@ export function Inicio() {
           </p>
           <div className="flex flex-col items-center gap-4 pt-4 sm:flex-row">
             <a
-              href="#projects"
+              href="#proyectos"
               className="persona-btn inline-flex items-center gap-2 bg-primary px-6 py-3 text-sm font-bold uppercase tracking-[0.2em] text-primary-foreground transition-all hover:bg-primary/85"
             >
               Ver proyectos
             </a>
             <a
-              href="#contact"
+              href="#contacto"
               className="persona-btn inline-flex items-center gap-2 border-2 border-primary/60 bg-background px-6 py-3 text-sm font-bold uppercase tracking-[0.2em] text-foreground transition-colors hover:border-primary hover:text-primary"
             >
               Contactar
@@ -53,7 +53,7 @@ export function Inicio() {
       </Reveal>
 
       <a
-        href="#about"
+        href="#sobre-mi"
         className="persona-blink absolute bottom-8 left-1/2 hidden -translate-x-1/2 text-primary transition-colors hover:text-primary/70 lg:inline-flex"
         aria-label="Desplazarse hacia abajo"
       >

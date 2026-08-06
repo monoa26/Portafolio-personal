@@ -16,7 +16,7 @@ const projects = [
 
 export function Proyectos() {
   return (
-    <section id="projects" className="w-full bg-secondary py-24">
+    <section id="proyectos" className="w-full bg-secondary py-24">
       <div className="mx-auto max-w-5xl px-4 sm:px-6">
         <Reveal>
           <EncabezadoSeccion eyebrow="Proyectos" title="Trabajos recientes" />

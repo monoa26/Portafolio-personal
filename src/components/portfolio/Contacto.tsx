@@ -4,7 +4,7 @@ import { EncabezadoSeccion } from "./EncabezadoSeccion";
 
 export function Contacto() {
   return (
-    <section id="contact" className="w-full bg-background py-24">
+    <section id="contacto" className="w-full bg-background py-24">
       <div className="mx-auto max-w-5xl px-4 sm:px-6">
         <Reveal>
           <EncabezadoSeccion eyebrow="Contacto" title="¿Tienes un proyecto en mente?" />
