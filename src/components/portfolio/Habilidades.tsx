@@ -6,11 +6,8 @@ const skills = [
     category: "Frontend",
     items: [
       "React",
-      "TypeScript",
+      "JavaScript",
       "Tailwind CSS",
-      "TanStack Start",
-      "TanStack Router",
-      "TanStack Query",
     ],
   },
   {

@@ -32,7 +32,7 @@ export function SobreMi() {
                 proyectos personales y compartir lo que aprendo con la comunidad.
               </p>
               <div className="grid grid-cols-2 gap-4 pt-4 sm:grid-cols-3">
-                {["React", "TypeScript", "Tailwind"].map((skill) => (
+                {["React", "JavaScript", "Tailwind"].map((skill) => (
                   <div
                     key={skill}
                     className="persona-btn border-2 border-primary/40 bg-background p-4 text-center"
