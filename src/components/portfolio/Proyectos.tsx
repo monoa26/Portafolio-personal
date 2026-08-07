@@ -8,7 +8,7 @@ const projects = [
     title: "AgroStore",
     description: "Una tienda que apoya al campesino para facilitarle la venta de sus productos.",
     image: agrostoreImage,
-    tags: ["React", "Tailwind", "Node.js", "TypeScript"],
+    tags: ["React", "Tailwind", "Node.js", "JavaScript"],
     demo: "https://agrostoreapp.netlify.app/",
     repo: "https://github.com/monoa26/AgroStore",
   },
